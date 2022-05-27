@@ -2,11 +2,10 @@ name: Scheduled Job
 
 on:
   schedule:
-    - cron: "0 * * * *"
     - cron: "*/5 * * * *"
 
 jobs:
-  scheduled-job:
+   scheduled-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
